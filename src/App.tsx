@@ -26,6 +26,7 @@ function App() {
 
     const clickedNumber = grid[rowIdx][colIdx];
     const newRevealedGrid = [...revealedGrid];
+
     newRevealedGrid[rowIdx][colIdx] = true;
 
     setRevealedGrid(newRevealedGrid);
