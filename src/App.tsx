@@ -47,13 +47,16 @@ function App() {
           setTimeout(() => alert("you won"));
         }
       }
-      setPreviousClick(undefined);
-    } else {
-      setPreviousClick({
-        row: rowIdx,
-        col: colIdx,
-      });
     }
+
+    setPreviousClick(
+      previousClick
+        ? undefined
+        : {
+            row: rowIdx,
+            col: colIdx,
+          }
+    );
   };
 
   return (
